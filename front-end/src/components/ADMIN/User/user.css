@@ -1,0 +1,26 @@
+.user-modal {
+  position: absolute;
+  left: -400vw;
+  right: 0;
+  margin: auto;
+  top: 50px;
+  background-color: #ccc;
+  width: max-content;
+  transition: left 0.4s ease-in-out;
+  padding: 5px;
+  border-radius: 6px;
+  z-index: 9999;
+}
+
+.user-modal.show {
+  left: 0;
+}
+
+.user-modal td:first-child {
+  padding: 5px;
+  font-weight: 600;
+  text-align: right;
+}
+.user-modal td:first-child::after {
+  content: " :";
+}

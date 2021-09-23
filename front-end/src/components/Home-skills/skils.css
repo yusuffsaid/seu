@@ -1,0 +1,78 @@
+.skils-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+.skils-container .web-skils,
+.skils-container .data-skils {
+  flex: 1;
+  padding: 10px;
+}
+
+.title {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 200;
+}
+
+.container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+p {
+  color: #fff;
+}
+
+.html {
+  width: 90%;
+  background-color: #04aa6d;
+}
+.react {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+.node {
+  width: 60%;
+  background-color: #808080;
+}
+.ml {
+  width: 90%;
+  background-color: #04aa6d;
+}
+.py {
+  width: 80%;
+  background-color: #2196f3;
+}
+.sql {
+  width: 65%;
+  background-color: #f44336;
+}
+.da {
+  width: 60%;
+  background-color: #808080;
+}
+
+@media (max-width: 768px) {
+  .skils-container {
+    flex-direction: column;
+  }
+  .skils-container .web-skils,
+  .skils-container .data-skils {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.categories {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.categories td,
+.categories th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.categories tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.categories tr:hover {
+  background-color: #ddd;
+}
+
+.categories th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9c88ff;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border: 1px solid #9c88ff;
+}
+form button {
+  padding: 10px 0px;
+  margin-bottom: 10px;
+  border: 1px solid #9c88ff;
+}

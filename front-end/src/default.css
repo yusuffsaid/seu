@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+input,
+select,
+textarea,
+button,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  background-color: #373b40;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+.clear {
+  clear: both;
+}
+
+.admin-left-side {
+  margin-left: 60px;
+  margin-top: 50px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.admin-left-side.more {
+  margin-left: 180px;
+  margin-top: 50px;
+}
+.card-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 50vh;
+  overflow-x: auto;
+}
+.card-container.user {
+  max-height: 90vh;
+}
+.card-container .card-item {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  box-shadow: 16px 18px 28px -16px #000000;
+}
+.card-container .card-item .card-header {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px 5px;
+  background-color: #9c88ff;
+  color: white;
+}
+.card-container .card-item .card-body {
+  width: 100%;
+  padding-top: 10px;
+  flex: 1;
+  padding: 5px;
+  overflow: auto;
+}
+.card-container .card-item .card-body span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  padding: 10px 2px;
+  border-radius: 5px;
+}
+.card-container .card-item .card-body span:hover {
+  background-color: #ccc;
+}
+.card-container .card-item .card-body span strong {
+  min-width: 80px;
+  display: inline-block;
+}
+.card-container .card-item .card-body .card-answer {
+  margin: 15px;
+  font-size: 14px;
+  line-height: 15px;
+  position: relative;
+}
+.card-container .card-item .card-body .card-answer::before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  left: -10px;
+  top: 2px;
+
+  background-color: #9c88ff;
+  border-radius: 50%;
+}
+
+.card-container .card-item .card-body p {
+  padding: 0;
+  margin: 0;
+}
+.card-container .card-item .card-footer {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9c88ff;
+}
+.card-container .card-item .card-footer button {
+  width: 50%;
+  height: 100%;
+  background-color: #9c88ff;
+  color: white;
+}
+.card-container .card-item .card-footer button:hover {
+  opacity: 50%;
+}
+
+@media (max-width: 768px) {
+  .card-container .card-item {
+    width: 100%;
+  }
+}

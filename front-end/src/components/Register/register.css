@@ -1,0 +1,77 @@
+.register {
+  width: max-content !important;
+  position: absolute;
+  top: 30px;
+  background: #ccc;
+  z-index: 9999;
+  left: -300vw;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 5px;
+  border-radius: 4px;
+  transition: left 0.4s ease;
+}
+.register.show {
+  left: 0;
+}
+.register .clos-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #9c88ff;
+  font-size: 30px;
+  cursor: pointer;
+}
+.register .register-form {
+  padding: 30px 50px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 400px;
+}
+.register .register-form input {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  transition: border-bottom 0.4s ease;
+  margin-bottom: 20px;
+}
+.register .register-form input::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+.register .register-form input:focus {
+  border-bottom: 1px solid #9c88ff;
+}
+.register .register-form button {
+  padding: 15px 0;
+  width: 100%;
+  transition: background-color 0.4s ease;
+  margin-bottom: 20px;
+}
+.register .register-form button:hover {
+  background-color: #9c88ff;
+}
+.register .register-form span {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .register .register-form {
+    padding: 10px 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 95vw;
+  }
+}
